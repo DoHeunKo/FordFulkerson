@@ -63,16 +63,19 @@ figure>
 ---  
 
 #### 알고리즘
+  
+```
 1. 그래프, 소스, 싱크를 입력으로 받는다.
 
 2. 입력 그래프와 동일한 잔여용량 그래프를 만들고 maxflow=0으로 초기화  
 
-3. DFS가 소스에서 싱크까지 경로를 반환하고    
+3. DFS가 소스에서 싱크까지 증가경로를 찾는다      
 * 최대 path flow를 찾는다  
 * 잔여 용량 그래프를 업데이트하고 경로에 따라 간선의 최솟값을 찾는다  
 * maxflow에 pathflow를 추가 한다  
 4. maxflow를 반환한다  
-  
+```
+
 ####  코드 알고리즘  
 ```
 Ford-Fulkerson( G, s, t)  
@@ -89,19 +92,20 @@ Ford-Fulkerson( G, s, t)
 
 ---
 
-![ford](https://user-images.githubusercontent.com/98294597/165564326-36de8ad1-f633-4375-a4ba-86e7f5a11286.PNG)  
+![graph_a_1](https://user-images.githubusercontent.com/98294597/165581049-e338f5b8-bb4e-493f-b5f3-535a075c321b.PNG)
+![graph_a_2](https://user-images.githubusercontent.com/98294597/165581065-47844a11-ec71-4729-9ad7-41f0e8f3d67b.PNG)
+
 
 #### 출력된 결과값  
 ``` 
 Graph:
-0: 1 2   
-1: 2 3   
-2: 3   
-3:  
-s--v--t  
-s--w--t  
-s--v--w--t  
-Ford-Fulkerson Max Flow: 5.0  
+0: 1 4 
+1: 2 3 
+2: 5 
+3: 2 5 
+4: 1 3 
+5: 
+Ford-Fulkerson Max Flow: 10.0
 ```  
   
 
