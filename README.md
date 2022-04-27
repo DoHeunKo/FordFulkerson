@@ -17,15 +17,16 @@
 
 > 특정한 지점에서 다른 지점까지 데이터가 얼마나 많이 흐르는지 측정하기위해 네트워크 플로우를 이용하고 유량 네트워크에서 주어진 두 정점 사이의 최대 유량을 찾기 위해 Ford Folkerson Algorithm(FFA)을 이용할 것이다. 하지만 DFS를 이용한 포드풀커슨알고리즘은 특수한 경우 한계점이 있기 때문에 그것을 개선한 에드먼트-카프 알고리즘(BFS)에 대해 서도 알아보려고 한다.  
 코드의 성능측정은 java의 DFS와 BFS를 이용하고, 그래프의 노드 수에 따라 최대유량이 어떻게 달라지는지 확인해 볼 것이다.  
-
+<br>
 <figure class="half">
 <img src="https://user-images.githubusercontent.com/98294597/165542981-31812cdb-4a08-4858-b3b4-91a4f536159c.PNG" width="300"/>
 <img src="https://user-images.githubusercontent.com/98294597/165543018-8f1ce36a-421f-40ef-8d4d-cbe678803e1f.PNG" width="300"/>
 figure>  
 
-<br>
+
 
 ### 용어
+<br>
 * source : 유량이 시작하는 지점 
 * sink : 유량이 도착하는 지점
 * capacity : 한 정점에서 다른 정점으로 갈 수 있는 간선의 용량
@@ -34,9 +35,9 @@ figure>
 <br>
 
 
-<br>
-### 특징
 
+### 특징
+<br>
 1. 용량의 제한      
 - 각각의 간선에 흐르는 유량은 간선의 용량을 초과할 수 없다.  
 
