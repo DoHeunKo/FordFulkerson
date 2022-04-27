@@ -93,8 +93,7 @@ Ford-Fulkerson( G, s, t)
 ---
 
 ![graph_a_1](https://user-images.githubusercontent.com/98294597/165581049-e338f5b8-bb4e-493f-b5f3-535a075c321b.PNG)
-![graph_a_2](https://user-images.githubusercontent.com/98294597/165581065-47844a11-ec71-4729-9ad7-41f0e8f3d67b.PNG)
-
+![image](https://user-images.githubusercontent.com/98294597/165584159-da222d7b-465e-42d5-a614-0efe4249280d.png)
 
 #### 출력된 결과값  
 ``` 
@@ -107,5 +106,10 @@ Graph:
 5: 
 Ford-Fulkerson Max Flow: 10.0
 ```  
-  
+> 포드 풀거슨 알고리즘을 생각하지않고 단순히 최대용량을 따라서 계산한 경우  
+> min[s-A-B-t] =min[7,5,8] : 5  
+> maxflow=5
+> min[s-A-C-t] =min[7-5,3,5] : 2  
+> maxflow=5+2  
+
 
