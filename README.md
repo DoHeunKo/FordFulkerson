@@ -15,8 +15,9 @@
 
 <br>
 
-> 특정한 지점에서 다른 지점까지 데이터가 얼마나 많이 흐르는지 측정하기위해 네트워크 플로우를 이용하고 유량 네트워크에서 주어진 두 정점 사이의 최대 유량을 찾기 위해 Ford Folkerson Algorithm(FFA)을 이용할 것이다. 하지만 DFS를 이용한 포드풀커슨알고리즘은 특수한 경우 한계점이 있기 때문에 그것을 개선한 에드먼트-카프 알고리즘(BFS)에 대해 서도 알아보려고 한다.  
-코드의 성능측정은 java의 DFS와 BFS를 이용하고, 그래프의 노드 수에 따라 최대유량이 어떻게 달라지는지 확인해 볼 것이다.  
+> 특정한 지점에서 다른 지점까지 데이터가 얼마나 많이 흐르는지 측정하기위해 네트워크 플로우를 이용하고 유량 네트워크에서 주어진 두 정점 사이의 최대 유량을 찾기 위해 Ford Folkerson Algorithm(FFA)을 이용할 것이다.  
+> 하지만 DFS를 이용한 포드풀커슨알고리즘은 특수한 경우 한계점이 있기 때문에 그것을 개선한 에드먼트-카프 알고리즘(BFS)에 대해 서도 알아보려고 한다.
+> 코드의 성능측정은 java의 DFS와 BFS를 이용하고, 그래프의 노드 수에 따라 최대유량이 어떻게 달라지는지 확인해 볼 것이다.  
 
 <figure class="half">
 <img src="https://user-images.githubusercontent.com/98294597/165542981-31812cdb-4a08-4858-b3b4-91a4f536159c.PNG" width="300"/>
@@ -58,8 +59,25 @@ figure>
 > -각 간선에 이미 흐르고 있는 용량 이외에 추가로 보낼 수 있는 유량  
 > -r(u,v) = c(u,v) – f(u,v)  
 > -증강 경로로 보낼 수 있는 최대 유량 :포함된 간선의 **잔여용량 중에서 가장 작은 값**  
-> -증강 경로 찾기 ? **DFS**
+> -증강 경로 찾기 ? **DFS**  
 > -**더 이상 증강 경로가 존재하지 않을 때까지** 증강경로를 찾고, 보낼 수 있는 최대 유량을 해당 경로를 따라 보내는 작업을 **반복**  
+
+---  
+####코드 알고리즘  
+```
+Ford-Fulkerson( G, s, t)  
+1 for each edge(u,v) G.E에 포함  
+2 	(u, v) .f =0  
+3	while there exists a path p from s to t in the residual network Gf  
+4		cf(p)= main{ cf(u,v) : (u,v) is in p}  
+5		for each edge (u,v) in p  
+6			if( u,v) 는 E에 포함  
+7				(u,v).f = (u,v).f + cf(p)  
+8			else (v,u).f = (v,u).f – cf(p)  
+
+```
+
+---
 
 ![ford](https://user-images.githubusercontent.com/98294597/165564326-36de8ad1-f633-4375-a4ba-86e7f5a11286.PNG)  
 
@@ -74,6 +92,6 @@ s--v--t
 s--w--t  
 s--v--w--t  
 Ford-Fulkerson Max Flow: 5.0  
+```  
   
-```
 
