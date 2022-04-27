@@ -64,15 +64,16 @@ figure>
 ![ford](https://user-images.githubusercontent.com/98294597/165564326-36de8ad1-f633-4375-a4ba-86e7f5a11286.PNG)  
 
 #### 출력된 결과값  
-'''
+'''  
 Graph:
-0: 1 2 
-1: 2 3 
-2: 3 
-3: 
-s--v--t
-s--w--t
-s--v--w--t
-Ford-Fulkerson Max Flow: 5.0
-'''
+0: 1 2   
+1: 2 3   
+2: 3   
+3:  
+s--v--t  
+s--w--t  
+s--v--w--t  
+Ford-Fulkerson Max Flow: 5.0  
+  
+'''  
 
