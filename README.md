@@ -19,8 +19,8 @@
 코드의 성능측정은 java의 DFS와 BFS를 이용하고, 그래프의 노드 수에 따라 최대유량이 어떻게 달라지는지 확인해 볼 것이다.  
 
 <figure class="half">
-<img src="https://user-images.githubusercontent.com/98294597/165542981-31812cdb-4a08-4858-b3b4-91a4f536159c.PNG")  
-<img src="https://user-images.githubusercontent.com/98294597/165543018-8f1ce36a-421f-40ef-8d4d-cbe678803e1f.PNG")  
+<img src="https://user-images.githubusercontent.com/98294597/165542981-31812cdb-4a08-4858-b3b4-91a4f536159c.PNG" width="300"/>
+<img src="https://user-images.githubusercontent.com/98294597/165543018-8f1ce36a-421f-40ef-8d4d-cbe678803e1f.PNG" width="300"/>
 figure>  
 
 <br>
