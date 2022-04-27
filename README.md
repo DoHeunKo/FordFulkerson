@@ -92,8 +92,13 @@ Ford-Fulkerson( G, s, t)
 
 ---
 
-![graph_a_1](https://user-images.githubusercontent.com/98294597/165581049-e338f5b8-bb4e-493f-b5f3-535a075c321b.PNG)
-![image](https://user-images.githubusercontent.com/98294597/165584159-da222d7b-465e-42d5-a614-0efe4249280d.png)
+<img src="https://user-images.githubusercontent.com/98294597/165581049-e338f5b8-bb4e-493f-b5f3-535a075c321b.PNG">
+  
+<figure class="third">
+<img src="https://user-images.githubusercontent.com/98294597/165584500-b80c3f4b-933e-4c94-adee-449ae77635d1.png">
+<img src="https://user-images.githubusercontent.com/98294597/165584547-9defece8-7481-4665-a8ed-86083c9540fa.png">
+<img src="https://user-images.githubusercontent.com/98294597/165584619-db741482-9b07-4f04-8922-3f260e2feb7a.png">
+figure>
 
 #### 출력된 결과값  
 ``` 
