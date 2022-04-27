@@ -98,6 +98,9 @@ Ford-Fulkerson( G, s, t)
 <img src="https://user-images.githubusercontent.com/98294597/165584500-b80c3f4b-933e-4c94-adee-449ae77635d1.png">
 <img src="https://user-images.githubusercontent.com/98294597/165584547-9defece8-7481-4665-a8ed-86083c9540fa.png">
 <img src="https://user-images.githubusercontent.com/98294597/165584619-db741482-9b07-4f04-8922-3f260e2feb7a.png">
+<img src="https://user-images.githubusercontent.com/98294597/165585315-b61a2d56-91c9-4c77-b8c6-78b685aa17b0.png">
+<img src="https://user-images.githubusercontent.com/98294597/165585424-e69c0591-89d1-4283-bcf7-c983d63e13f8.png">
+
 figure>
 
 #### 출력된 결과값  
