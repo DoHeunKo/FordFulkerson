@@ -49,7 +49,7 @@ figure>
 - 실제로는 결과에 영향을 주지 않는다.
 <br>
 
-## Ford-Fulkerson  
+## Ford-Fulkerson(DFS)  
 * 소스(source) 노드에서 시작해서 싱크(sink)노드로 도착하는 유량  
   -유량 네트워크의 모든 간선의 유량을 0으로 초기화   
   -소스에서 싱크로 유량을 더 보낼 수 있는 경로를 찾아 유량 보내기를 반복  
@@ -119,5 +119,13 @@ Ford-Fulkerson Max Flow: 10.0
 > maxflow=5
 > min[s-A-C-t] =min[7-5,3,5] : 2  
 > maxflow=5+2  
+  
+<img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
+
+
+#### 포드폴커슨 특수한 경우  
+![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
+  
+## Edmonds-Karp(BFS)
 
 
