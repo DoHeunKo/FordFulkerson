@@ -51,6 +51,8 @@
 
 <br>
 
+---
+
 ## Ford-Fulkerson(DFS)  
 * 소스(source) 노드에서 시작해서 싱크(sink)노드로 도착하는 유량  
 > -유량 네트워크의 모든 간선의 유량을 0으로 초기화   
@@ -156,9 +158,17 @@ Ford-Fulkerson( G, s, t)
 > * 소스에서 시작해 싱크까지 보낼 수 있는 데이터의 최대 용량을 구하는 알고리즘  
 > * DFS에서 특수한 경우 증강경로의 수가 exponential의 형태를 띌 수 있다.  
 > * 에드먼트 카프는 BFS를 사용하는 유량 네트워크 알고리즘의 종류이지만 무조건 포드 풀커슨보다 뛰어난 것은 아니다.  
-
-특수한 경우 설명  
+ 
   
- ### 참고자료  
+ ### 참고자료 
+ 
+ 
  (https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp.html)
-  
+ (http://cs.williams.edu/~shikha/teaching/spring20/cs256/lectures/Lecture19.pdf)
+ (https://m.blog.naver.com/jh20s/221298145631)
+ (https://www.topcoder.com/thrive/articles/edmonds-karp-and-dinics-algorithms-for-maximum-flow)
+ (https://stackoverflow.com/questions/16652902/having-trouble-understanding-and-implementing-the-ford-fulkerson-algorithm)
+ (https://courses.engr.illinois.edu/cs473/fa2012/notes/22-maxflowalgs.pdf)
+ (https://ocw.tudelft.nl/wp-content/uploads/Algoritmiek_Choosing_Good_Augmenting_Paths.pdf)
+ (https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm)
+ (https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/07NetworkFlowI.pdf)
