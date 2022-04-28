@@ -122,14 +122,18 @@ Ford-Fulkerson Max Flow: 10.0
   
 <img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
 
-
-#### 포드폴커슨 특수한 경우  
-![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
+#### DFS사용시 Ford-Folkerson의 worst case  
   
+![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
+> 위와 같은 그래프의 경우 각각의 단계마다 1 유량 증가  
+> 최대 유량을 찾기 위해서는 1,000,000 단계가 걸린다. 만약 DFS(Depth First Search)대신에 BFS(Breadth First Search)를 사용한다면 2단계만에 최대 유량을 얻을 수 있다.  
+
+![DFS(1000000)](https://user-images.githubusercontent.com/98294597/165678101-d8bada2f-e516-4643-a100-5dded9243f82.PNG)  
+
+
 ## Edmonds-Karp(BFS)
 그래프 알고리즘에서 Ford-Folkerson과 Edmonds-Karp는 가지고 있는 자료를 100%로 탐색한다는 점에서 모두 brute force 알고리즘에 속한다. 네트워크 유량 알고리즘을 DFS 혹은 BFS를 사용하는지 여부에 따라 결정된다. 탐색에 따라 두 경우의 시간복잡도는 다르다. 하지만 DFS(Ford-Folkerson)로 구현할 경우 찾는 해가 최적이 아닐 가능성이 있기 때문에 BFS를 대부분 사용하는 경우가 많다. 다음의 예시와 시간복잡도의 측면에서 어떤 방식을 사용하는 것이 더 최적의 최대유량을 얻을 수 있는 지 확인해보자.  
   
-DFS사용시 한계(예시)  
   
 BFS를 사용했을 때 개선되는 점(예시)  
 
