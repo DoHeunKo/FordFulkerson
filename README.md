@@ -1,4 +1,4 @@
-# Ford-Fulkerson
+# Ford-Fulkerson Algorithm
 <br>
 
 <ol>
