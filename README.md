@@ -78,7 +78,7 @@ maxflow=5+3+1
 ![net_ret](https://user-images.githubusercontent.com/98294597/165693545-f016d58f-62ba-4c25-bb22-3a2e49c7fbb0.PNG)
 
 #### 출력된 결과값  
-![image](https://user-images.githubusercontent.com/98294597/165695336-3db5bf70-67ab-4253-8517-b516f6112ab1.png)  
+![image](https://user-images.githubusercontent.com/98294597/165695455-cb9fd882-1a4f-4782-9ce3-fd6a74d45845.png) 
   
 
 <img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
