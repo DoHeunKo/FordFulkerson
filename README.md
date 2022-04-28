@@ -1,6 +1,5 @@
-# FordFulkerson
+# Ford-Fulkerson
 <br>
-
 
 <ol>
 <li>Network Flow</li>
@@ -122,7 +121,7 @@ Ford-Fulkerson( G, s, t)
 
 
 
-#### DFS사용시 Ford-Folkerson의 worst case  (허수)
+#### DFS사용시 Ford-Folkerson의 worst case 
   
 ![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
 > 위와 같은 그래프의 경우 각각의 단계마다 1 유량 증가  
@@ -153,14 +152,13 @@ Ford-Fulkerson( G, s, t)
 
 ---
 
-내 생각 전체 내용 정리(fordfulkerson) 
+### 전체 내용 정리(fordfulkerson) 
+> * 소스에서 시작해 싱크까지 보낼 수 있는 데이터의 최대 용량을 구하는 알고리즘  
+> * DFS에서 특수한 경우 증강경로의 수가 exponential의 형태를 띌 수 있다.  
+> * 에드먼트 카프는 BFS를 사용하는 유량 네트워크 알고리즘의 종류이지만 무조건 포드 풀커슨보다 뛰어난 것은 아니다.  
 
-
-다른 형태의 그래프와 비교(복잡) 
 특수한 경우 설명  
-특징 (수식 넣어서 보완)
-알고리즘 플로우차트로 설명
-
- 테스트 케이스  
- 참고자료  
+  
+ ### 참고자료  
+ (https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp.html)
   
