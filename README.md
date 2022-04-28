@@ -127,6 +127,7 @@ Ford-Fulkerson Max Flow: 10.0
 ![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
 > 위와 같은 그래프의 경우 각각의 단계마다 1 유량 증가  
 > 최대 유량을 찾기 위해서는 1,000,000 단계가 걸린다. 만약 DFS(Depth First Search)대신에 BFS(Breadth First Search)를 사용한다면 2단계만에 최대 유량을 얻을 수 있다.  
+***증가 경로의 수는 입력 크기에서 기하급수적으로 늘어날 수 있다!!***  
 
 ![DFS(1000000)](https://user-images.githubusercontent.com/98294597/165678101-d8bada2f-e516-4643-a100-5dded9243f82.PNG)  
 
