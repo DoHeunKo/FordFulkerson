@@ -41,10 +41,15 @@
 
 2. 유량의 보존  
     - 하나의 정점에 대해서 들어오는 유량의 총합과 나가는 유량의 총합이 같다. 
+    ![image](https://user-images.githubusercontent.com/98294597/165703998-da599ee5-57bf-4d21-9c75-77442837b778.png)  
+    
 
 3. ***유량의 대칭 (포드 폴커슨 알고리즘의 핵심)***  
     - 최대 유량을 찾기 위해 정점사이에 가상의 간선(capacity=0)을 만들어 증강 경로를 설정하도록 한다.  
-    - 실제로는 결과에 영향을 주지 않는다.
+    - 실제로는 결과에 영향을 주지 않는다.  
+    ![image](https://user-images.githubusercontent.com/98294597/165704097-22f916e0-2bf0-4fd5-91d1-15ae1a1729e1.png)  
+    
+
 <br>
 
 ## Ford-Fulkerson(DFS)  
