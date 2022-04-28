@@ -36,7 +36,8 @@
 
 1. 용량의 제한      
     - 각각의 간선에 흐르는 유량은 간선의 용량을 초과할 수 없다.  
-        $ \forall\ (u,v) \in E : f(u,v) \leq c(u,v) $      
+     ![image](https://user-images.githubusercontent.com/98294597/165703814-1fdb25ee-1fbd-48a8-8779-62a72855d241.png)  
+     
 
 2. 유량의 보존  
     - 하나의 정점에 대해서 들어오는 유량의 총합과 나가는 유량의 총합이 같다. 
