@@ -15,7 +15,7 @@
 
 <br>
 
-> 특정한 지점에서 다른 지점까지 데이터가 얼마나 많이 흐르는지 측정하기위해 네트워크 플로우를 이용하고 유량 네트워크에서 주어진 두 정점 사이의 최대 유량을 찾기 위해 Ford Folkerson Algorithm(FFA)을 이용할 것이다.  
+> 네트워크 유량은 굉장히 강력한 최적화 문제로 특정한 지점에서 다른 지점까지 데이터가 얼마나 많이 흐르는지 측정하기위해 네트워크 플로우를 이용하고 유량 네트워크에서 주어진 두 정점 사이의 최대 유량을 찾기 위해 Ford Folkerson Algorithm(FFA)을 이용할 것이다.  
 > 하지만 DFS를 이용한 포드풀커슨알고리즘은 특수한 경우 한계점이 있기 때문에 그것을 개선한 에드먼트-카프 알고리즘(BFS)에 대해 서도 알아보려고 한다.
 > 코드의 성능측정은 java의 DFS와 BFS를 이용하고, 그래프의 노드 수에 따라 최대유량이 어떻게 달라지는지 확인해 볼 것이다.  
 
@@ -122,7 +122,7 @@ Ford-Fulkerson Max Flow: 10.0
   
 <img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
 
-#### DFS사용시 Ford-Folkerson의 worst case  
+#### DFS사용시 Ford-Folkerson의 worst case  (허수)
   
 ![image](https://user-images.githubusercontent.com/98294597/165586450-ed006ca8-11e6-4863-bf46-7f5190f37ee5.png)  
 > 위와 같은 그래프의 경우 각각의 단계마다 1 유량 증가  
@@ -138,18 +138,20 @@ Ford-Fulkerson Max Flow: 10.0
 
 BFS를 사용했을 때 개선되는 점(예시)  
 
-#### 복잡도  
+### 복잡도  
 
 ||time complexity|space complexity| 
-|:---|:---:|---:| 
+|:---|:---:|:---:| 
 |Ford-Folkerson|O(Ef)|O(E + V)| 
 |Edmonds-Karp|O(VE^2)|O(E+V)|  
-
-Edmonds-Karp  
-
-시간복잡도에 따라 최적의 유량을 얻을 수 있는 그래프 특징(예시)  성능(결과)  
+***(E:간선의 수, f:최대유량, V:정점의 수)***
   
-내 생각  
+시간복잡도에 따라 최적의 유량을 얻을 수 있는 그래프 특징(예시), 성능(결과)    
+> 위의 시간 복잡도에서 알 수 있듯이 Ford-Fulkerson은 flow에 영향을 받고 Edmonds-Karp는 flow보다는 edge에 더 많은 영향을 받게 된다. Ford-Fulkerson의 최악의 경우가 있다고 해서 무조건 BFS를 사용하는 Edmonds-karp가 성능이 좋다고 할 수 없다. 
+> 그래프에서 flow값이 적고 edge가 더 많은 경우에는 Ford-Fulkerson이 더 나은 결과를 가져올 수 있다.  
+
+
+내 생각 전체 내용 정리(fordfulkerson) 
 
 코드 분석 (java) 
 
