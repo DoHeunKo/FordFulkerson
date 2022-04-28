@@ -132,6 +132,21 @@ Ford-Fulkerson( G, s, t)
 
 ![DFS(1000000)](https://user-images.githubusercontent.com/98294597/165678101-d8bada2f-e516-4643-a100-5dded9243f82.PNG)  
 
+#### ***증강 경로 선택시 주의할 점***  
+* 효율적으로 증강경로 찾기  
+* 적은 반복  
+> 경로 선택에 따라  
+>    - 몇몇의 결과는 지수 알고리즘을 나타낸다  
+>    - 효율적인 선택은 다항식 알고리즘을 나타낸다  
+>    - 용량이 정수가 아닌 무리수일 경우 종료를 보장하지 않는다  
+
+sol) 1. max bottleneck 용량
+     2. 충분히 큰 bottleneck 용량
+     3. 가장 적은 수의 간선  
+     
+
+
+
 ---
 
 ## Edmonds-Karp(BFS)
