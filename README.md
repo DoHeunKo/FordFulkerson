@@ -140,9 +140,9 @@ Ford-Fulkerson( G, s, t)
 >    - 효율적인 선택은 다항식 알고리즘을 나타낸다  
 >    - 용량이 정수가 아닌 무리수일 경우 종료를 보장하지 않는다  
 
-sol) 1. max bottleneck 용량
-     2. 충분히 큰 bottleneck 용량
-     3. 가장 적은 수의 간선  
+sol) ***1. max bottleneck 용량  
+     2. 충분히 큰 bottleneck 용량  
+     3. 가장 적은 수의 간선***    
      
 
 
