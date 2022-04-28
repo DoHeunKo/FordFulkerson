@@ -114,12 +114,18 @@ Graph:
 5: 
 Ford-Fulkerson Max Flow: 10.0
 ```  
-> 포드 풀거슨 알고리즘을 생각하지않고 단순히 최대용량을 따라서 계산한 경우  
-> min[s-A-B-t] =min[7,5,8] : 5  
-> maxflow=5
-> min[s-A-C-t] =min[7-5,3,5] : 2  
-> maxflow=5+2  
-  
+#### 포드 풀거슨 알고리즘을 사용하지 않고 최대용량을 따라서 계산한 경우  
+```
+min[s,A,B,t]= min[7,5,8] : 5  
+maxflow=5  
+min[s,D,A,C,t]= min[4,3,3,5] : 3
+maxflow=5+3  
+min[s,D,A,C,B,t]= min[4-3,2,3,8-5] : 1
+maxflow=5+3+1
+```  
+3번의 탐색을 통해서 maxflow가 9라는 결과를 얻었다. 용량이 다 차지않은 간선이 있지만 유량이 이동할 수 있는 증강경로를 찾기가 힘들다. 이 때 포드-폴커슨 방법을 이용하면 A-D사이에 D-A와 반대로 유량을 흘려주면 유량의 대칭성의 성질로 3->2로 상쇄가 되고 s-A-D-C-t로 maxflow가 1이 추가되는 것을 알 수 있다.  
+
+
 <img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
 
 #### DFS사용시 Ford-Folkerson의 worst case  (허수)
@@ -147,7 +153,7 @@ BFS를 사용했을 때 개선되는 점(예시)
   
 ***(E:간선의 수, f:최대유량, V:정점의 수)***
   
-시간복잡도에 따라 최적의 유량을 얻을 수 있는 그래프 특징(예시), 성능(결과)    
+### 시간복잡도에 따라 최적의 유량을 얻을 수 있는 그래프 특징(예시), 성능(결과)    
 > 위의 시간 복잡도에서 알 수 있듯이 Ford-Fulkerson은 flow에 영향을 받고 Edmonds-Karp는 flow보다는 edge에 더 많은 영향을 받게 된다. Ford-Fulkerson의 최악의 경우가 있다고 해서 무조건 BFS를 사용하는 Edmonds-karp가 성능이 좋다고 할 수 없다. 
 > 그래프에서 flow값이 적고 edge가 더 많은 경우에는 Ford-Fulkerson이 더 나은 결과를 가져올 수 있다.  
 
