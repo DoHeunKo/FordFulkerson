@@ -91,17 +91,20 @@ Ford-Fulkerson( G, s, t)
 ```
 
 ---
+![netflow](https://user-images.githubusercontent.com/98294597/165693090-8f1131d5-9362-40c9-8f41-9c7d0ffccebb.PNG)
+```  
+#### 포드 풀거슨 알고리즘을 사용하지 않고 최대용량을 따라서 계산한 경우  (① ② )
+```
+min[s,A,B,t]= min[7,5,8] : 5  
+maxflow=5  
+min[s,D,A,C,t]= min[4,3,3,5] : 3
+maxflow=5+3  
+min[s,D,A,C,B,t]= min[4-3,2,3,8-5] : 1
+maxflow=5+3+1
+```  
+> 3번의 탐색을 통해서 maxflow가 9라는 결과를 얻었다. 용량이 다 차지않은 간선이 있지만 유량이 이동할 수 있는 증강경로를 찾기가 힘들다. 이 때 포드-폴커슨 방법을 이용하면 A-D사이에 D-A와 반대로 유량을 흘려주면 유량의 대칭성의 성질로 3->2로 상쇄가 되고 s-A-D-C-t로 maxflow가 1이 추가되는 것을 알 수 있다.  
 
-<img src="https://user-images.githubusercontent.com/98294597/165581049-e338f5b8-bb4e-493f-b5f3-535a075c321b.PNG">
-  
-<figure class="third">
-<img src="https://user-images.githubusercontent.com/98294597/165584500-b80c3f4b-933e-4c94-adee-449ae77635d1.png">
-<img src="https://user-images.githubusercontent.com/98294597/165584547-9defece8-7481-4665-a8ed-86083c9540fa.png">
-<img src="https://user-images.githubusercontent.com/98294597/165584619-db741482-9b07-4f04-8922-3f260e2feb7a.png">
-<img src="https://user-images.githubusercontent.com/98294597/165585315-b61a2d56-91c9-4c77-b8c6-78b685aa17b0.png">
-<img src="https://user-images.githubusercontent.com/98294597/165585424-e69c0591-89d1-4283-bcf7-c983d63e13f8.png">
-
-figure>
+![net_ret](https://user-images.githubusercontent.com/98294597/165693545-f016d58f-62ba-4c25-bb22-3a2e49c7fbb0.PNG)
 
 #### 출력된 결과값  
 ``` 
@@ -114,18 +117,6 @@ Graph:
 5: 
 Ford-Fulkerson Max Flow: 10.0
 ```  
-#### 포드 풀거슨 알고리즘을 사용하지 않고 최대용량을 따라서 계산한 경우  
-```
-min[s,A,B,t]= min[7,5,8] : 5  
-maxflow=5  
-min[s,D,A,C,t]= min[4,3,3,5] : 3
-maxflow=5+3  
-min[s,D,A,C,B,t]= min[4-3,2,3,8-5] : 1
-maxflow=5+3+1
-```  
-3번의 탐색을 통해서 maxflow가 9라는 결과를 얻었다. 용량이 다 차지않은 간선이 있지만 유량이 이동할 수 있는 증강경로를 찾기가 힘들다. 이 때 포드-폴커슨 방법을 이용하면 A-D사이에 D-A와 반대로 유량을 흘려주면 유량의 대칭성의 성질로 3->2로 상쇄가 되고 s-A-D-C-t로 maxflow가 1이 추가되는 것을 알 수 있다.  
-
-
 <img src="https://user-images.githubusercontent.com/98294597/165587091-796f9981-350d-4547-b41c-286652194427.PNG">
 
 #### DFS사용시 Ford-Folkerson의 worst case  (허수)
